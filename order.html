@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telePhone=no">
+    <title>Оформление заказа</title>
+    <meta name="description" content="Снипет для поисковиков" />
+    <meta name="keywords" content="Ключевые слова страницы">
+    <link rel="canonical" href="11111" />
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nprogress.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <!-- google analytics -->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-97104505-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- facebook -->
+    <meta property="og:site_name" content="SmartLIGA.club"/>
+    <meta property="og:title" content="Присоединяйся в клуб - получил 200 грн на покупку электроники в SmartLIGA"/>
+    <meta property="og:description"
+          content="Используй мою ссылку, чтобы получить свои 200 грн для покупки электроники в шопинг-клубе!"/>
+    <meta property="og:url" content="11111"/>
+    <meta property="og:type" content="product"/>
+    <meta property="og:image" content="https://smartliga.club/img/OG_image.png"/>
+    <meta property="fb:app_id" content="1280146828728409"/>
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Присоединяйся в клуб - получил 200 грн на покупку товаров в SmartLIGA"/>
+    <meta name="twitter:description"
+          content="Используй мою ссылку, чтобы получить свои 200 грн для покупки электроники в шопинг-клубе!"/>
+    <meta name="twitter:site" content="@LigaSmart"/>
+    <meta name="twitter:image" content="https://smartliga.club/img/img_fortwitter.png"/>
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+    <div class="topmenu">
+        <div class="width1167 clearfix">
+            <div class="city fleft">
+                <div class="changeCity">Ваш город: <span class="currentCity">Киев</span></div>
+                <div class="choiseCity">
+                    <h2>Вы находитесь в Киев?</h2>
+                    <a>Да, верно</a>
+                    <span>Нет, другой город</span>
+                </div>
+            </div>
+            <div class="center" style="margin-top: 2px;">
+                <a href="#" class="">Шопинг-клуб</a>
+                <a href="#" class="AreYouSupplier">Вы поставщик?</a>
+                <span>
+                    <a href="pageBonus.html" class="pageBonus">Получи 200 грн за инвайт
+                    <img src="img/attention_point_x1.png " alt="img"></a>
+                </span>
+                <span class="TellYourFriends">
+                    Расскажи о клубе друзьям
+                    <img src="img/attention_point_x1.png" alt="img">
+                </span>
+            </div>
+            <div class="fright ">
+                <a href="EnterRegistration.html" class="enter LogIn">Войти</a>
+                <a href="EnterRegistration.html" class="enter Registration">Регистрация</a>
+            </div>
+        </div>
+    </div>
+    <div class="middleMenu width1167 clearfix">
+        <a href="index.html" class="logo fleft">
+            <img src="img/SmartLIGA_x1.png" alt="logo">
+        </a>
+        <div class="searchform fleft">
+            <span>КУПИТЬ В ИНТЕРНЕТЕ СО СКИДКОЙ</span>
+            <form>
+                <input type="text" id="search" placeholder="Найди любой товар дешевле в нашем клубе!">
+                <input type="submit" value="НАЙТИ">
+            </form>
+        </div>
+        <div class="rside fright">
+            <div class="clearfix">
+                <div class="bucket fright">
+                    <span>1</span>
+                    КОРЗИНА
+
+                </div>
+                <div class="openBucket">
+                    <div class="backCont">
+                        <img src="img/simple_logo_SmartLIGA_x1.png" alt="liga">
+                        <div class="close fright">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                    <div id="tovContainer" class="scrollbar-inner">
+                        <ul>
+                            <li>
+                                <div class="tov">
+                                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                                </div>
+                                <div class="descr">
+                                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                                    <span>Количество: 1</span>
+                                </div>
+                                <div class="price">
+                                    7 898 грн
+                                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="tov">
+                                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                                </div>
+                                <div class="descr">
+                                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                                    <span>Количество: 1</span>
+                                </div>
+                                <div class="price">
+                                    7 898 грн
+                                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="tov">
+                                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                                </div>
+                                <div class="descr">
+                                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                                    <span>Количество: 1</span>
+                                </div>
+                                <div class="price">
+                                    7 898 грн
+                                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="tov">
+                                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                                </div>
+                                <div class="descr">
+                                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                                    <span>Количество: 1</span>
+                                </div>
+                                <div class="price">
+                                    7 898 грн
+                                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="tov">
+                                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                                </div>
+                                <div class="descr">
+                                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                                    <span>Количество: 1</span>
+                                </div>
+                                <div class="price">
+                                    7 898 грн
+                                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="tov">
+                                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                                </div>
+                                <div class="descr">
+                                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                                    <span>Количество: 1</span>
+                                </div>
+                                <div class="price">
+                                    7 898 грн
+                                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="tov">
+                                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                                </div>
+                                <div class="descr">
+                                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                                    <span>Количество: 1</span>
+                                </div>
+                                <div class="price">
+                                    7 898 грн
+                                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="pay clearfix">
+                        <li>
+                            К ОПЛАТЕ:
+                            <span>19 458 <span>грн</span></span>
+                        </li>
+                        <li>
+                            Клубная скидка:
+                            <span>
+                5 219 <span>грн</span>
+            </span>
+                        </li>
+                    </ul>
+                    <a href="bucket.html" class="correctOrder">
+                        Посмотреть или редактировать
+                    </a>
+                    <a href="bucket.html" class="takeOrder">
+                        <img src="img/button_Smart_x1.png" alt="smart">
+                        ОФОРМИТЬ СО СКИДКОЙ
+                    </a>
+                </div>
+            </div>
+            <div class="callbackDiv">
+                <!--<img src="img/main_phone_x1.png" alt="img">-->
+                <span class="number">(098) 105 7239</span>
+            </div>
+            <div class="hendlerCallback">
+                <a href="contact.html" class="sendMassege">Отправить сообщение</a>
+                <span class="callBack">Обратный звонок</span>
+
+            </div>
+        </div>
+    </div>
+    <nav class="width1167">
+        <ul class="clearfix tech">
+            <li><a href="section.html"><img src="img/main/smartphones_x1.png" alt="img"><span>Смартфоны</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/telephones_x1.png" alt="img"><span>Телефоны</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/notebook_x1.png" alt="img"><span>Ноутбуки</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/tablets_x1.png" alt="img"><span>Планшеты</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/pc_x1.png" alt="img"><span>Компьютеры</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/tv_x1.png" alt="img"><span>Телевизоры</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/routers_x1.png" alt="img"><span>Роутеры Wi-Fi</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/accessories_x1.png" alt="img"><span>Аксессуары</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/washer_x1.png" alt="img"><span>Стиральные машины</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/boiler_x1.png" alt="img"><span>Бойлеры</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/refrigerator_x1.png" alt="img"><span>Холодильники</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/vacuum_cleaner_x1.png" alt="img"><span>Пылесосы</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/hiter_x1.png" alt="img"><span>Обогреватели</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/iron_x1.png" alt="img"><span>Утюги</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/monitors_x1.png" alt="img"><span>Мониторы</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="section.html"><img src="img/main/multi_x1.png" alt="img"><span>Мультиварки</span></a>
+                <div class="tovary clearfix menuLvl2 width1167">
+                    <div>
+                        <h2>ШОПИНГ-КЛУБ:</h2>
+                        <p>
+                            А вы уже стали членом шопинг-клуба SmartLIGA? Присоединяйтесь в клуб и покупайте товары с
+                            <span>огромными скидками</span>!
+                        </p>
+                        <a href="#" class="discover enterSmartLIGA">УЗНАТЬ</a>
+                    </div>
+                    <ul>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Длинное название тоже</a></li>
+                        <li><a href="subsection.html">Samsung</a></li>
+                        <li><a href="subsection.html">Xiaomi</a></li>
+                        <li><a href="subsection.html">Sony</a></li>
+                        <li><a href="subsection.html">Fly</a></li>
+                        <li><a href="subsection.html">Lenovo</a></li>
+                        <li><a href="subsection.html">Nomi</a></li>
+                        <li><a href="subsection.html">Acer</a></li>
+                        <li><a href="subsection.html">Doogee</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">LG</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="subsection.html">Philips</a></li>
+                        <li><a href="subsection.html">Motorola</a></li>
+                        <li><a href="subsection.html">Huawei</a></li>
+                        <li><a href="section.html" class="lookAll">Смотреть все</a></li>
+                    </ul>
+
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<section class="orderPage">
+    <div class="container width1167">
+        <h1 class="page-title">Оформление заказа</h1>
+        <div class="content order-content">
+            <div class="left-content">
+                <div class="checkout-info">
+                    <fieldset class="customer-contacts">
+                        <legend>На кого отправить заказ?</legend>
+                        <div class="form-group">
+                            <label for="input-payment-name">Имя, Фамилия:</label>
+                            <input id="input-payment-name" type="text" name="payment-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-payment-phone">Телефон:</label>
+                            <input id="input-payment-phone" type="tel" name="payment-phone">
+                        </div>
+                    </fieldset>
+                    <fieldset class="delivery-methods">
+                        <legend>Способ доставки:</legend>
+                        <div class="form-group">
+                            <ul class="choice-of-delivery-method">
+                                <li style="flex: 0 0 198px; padding-left: 16px;">
+                                    <input id="delivery-method1" type="radio" name="delivery-method"
+                                           value="Новая почта" checked="checked">
+                                    <label for="delivery-method1">
+                                        <span class="title">Новая почта</span>
+                                        <span class="where">любое отделение</span>
+                                        <span class="value">Бесплатно!</span>
+                                    </label>
+                                </li>
+                                <li style="flex: 0 0 195px; padding-left: 20px;">
+                                    <input id="delivery-method2" type="radio" name="delivery-method"
+                                           value="Самовывоз">
+                                    <label for="delivery-method2">
+                                        <span class="title">Самовывоз</span>
+                                        <span class="where">c наших складов</span>
+                                        <span class="value">Бесплатно!</span>
+                                    </label>
+                                </li>
+                                <li style="">
+                                    <input id="delivery-method3" type="radio" name="delivery-method"
+                                           value="Курьером до двери">
+                                    <label for="delivery-method3">
+                                        <span class="title">Курьером до двери</span>
+                                        <span class="where">доставляем в любой город</span>
+                                        <span class="value">Бесплатно!</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="for-delivery-method" id="for-delivery-method1">
+                            <div class="form-group branch-number">
+                                <label for="input-branch-number">Отделение №:</label>
+                                <input id="input-branch-number" type="text" name="input-branch-number">
+                            </div>
+                            <div class="form-group payment-city">
+                                <label for="input-payment-city">Город:</label>
+                                <input class="true" id="input-payment-city" type="text" name="payment-city"
+                                       value="Киев">
+                                <span class="change-input-payment-city">Проверьте правильность города.
+                                    <a class="changeCity changeCityOrderNP">Изменить</a></span>
+                            </div>
+                        </div>
+                        <div class="for-delivery-method hide" id="for-delivery-method2">
+                            <div class="self-catering-info">
+                                <p>Наш адрес: г. Киев, ул. Полевая, 21 | Call-центр 098 105 7239</p>
+                                <p>Выдача товара: Пн - Вс с 9:00 до 18:00</p>
+                                <p>Выдача товара: <b>Уточняйте, пожалуйста, наличие заказа по телефону, перед тем,
+                                    как ехать</b></p>
+                            </div>
+                        </div>
+                        <div class="for-delivery-method hide" id="for-delivery-method3">
+                            <div class="form-group adres">
+                                <label for="input-adres">Адрес:</label>
+                                <input id="input-adres" type="text" name="input-branch-adres">
+                            </div>
+                            <div class="form-group payment-city">
+                                <label for="input-payment-city1">Город:</label>
+                                <input class="true" id="input-payment-city1" type="text" name="payment-city"
+                                       value="Киев">
+                                <span class="change-input-payment-city">Проверьте правильность города.
+                                    <a class="changeCity changeCityOrderCourier">Изменить</a></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="payment-methods">
+                        <legend>Способ оплаты:</legend>
+                        <div class="form-group">
+                            <ul class="choice-of-payment-method">
+                                <li>
+                                    <input id="payment-method1" type="radio" name="payment-method"
+                                           value="Наличными при получении" checked="checked">
+                                    <label for="payment-method1">
+                                        <span class="title cash">Наличными при получении</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="payment-method2" type="radio" name="payment-method"
+                                           value="Безналичный рассчет">
+                                    <label for="payment-method2">
+                                        <span class="title non-cash">Безналичный рассчет</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="payment-method3" type="radio" name="payment-method"
+                                           value="Visa / MasterCard">
+                                    <label for="payment-method3">
+                                        <span class="title bank-card">Visa / MasterCard</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                    <fieldset class="return-money">
+                        <legend>
+                            Возвращаем деньги:
+                            <span class="for-return-money-legend">только для членов клуба SmartLIGA <a class="whatItIsOrder">Что это?
+                                <div class="helpPop">
+                                Чтобы возвращаться деньги нужно быть зарегистрированным пользователем
+                            </div></a>
+
+                            </span>
+                        </legend>
+                        <div class="form-group">
+                            <label for="input-return">Возврат:</label>
+                            <span id="input-return">+157<span class="currency">грн</span></span>
+                        </div>
+                        <div id="if-have-account">
+                            <div class="form-group">
+                                <label for="email-for-changes">E-mail:</label>
+                                <input id="email-for-changes" type="email" name="email">
+                                <a id="change-email" class="for-input-email" href="#">Изменить</a>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-password1">Пароль:</label>
+                                <input id="input-password1" type="text" name="password">
+                                <span class="for-input-password">Чтобы возвращать деньги нужно придумать свой пароль. После чего вы сможете тратить накопленные деньги. <a
+                                        id="have-account" href="#">У меня уже есть аккаунт</a></span>
+                            </div>
+                        </div>
+                        <div id="if-not-have-account" class="hide">
+                            <div class="form-group">
+                                <label for="input-email2">E-mail:</label>
+                                <input id="input-email2" type="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-password2">Пароль:</label>
+                                <input id="input-password2" type="text" name="password">
+                                <span class="for-input-password">Укажите e-mail и пароль для входа в свой аккаунт. <a
+                                        id="not-have-account" href="#">У меня еще нет аккаунта</a></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="discount-coupon">
+                        <legend>
+                            А купон на скидку не забыли?
+                            <span class="for-discount-coupon-legend">только для членов клуба SmartLIGA
+                                <a href="#" class="TellYourFriendsOrder TellYourFriends">Как получить?</a></span>
+                        </legend>
+                        <div class="form-group">
+                            <label for="input-coupon-code">Код купона:</label>
+                            <input id="input-coupon-code" type="text" name="coupon-code">
+                        </div>
+                        <div class="form-group">
+                            <label for="submit"></label>
+                            <input id="submit" type="submit" name="submit" value="Использовать">
+                        </div>
+                    </fieldset>
+                    <fieldset class="comment-order">
+                        <legend>Комментарий к заказу:</legend>
+                        <div class="form-group">
+                                <textarea class="" rows="3" cols=""
+                                          placeholder="Напишите, что мы должны знать"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="total-price">
+                        <div class="price-block">
+                            <p class="text">Итоговая цена с учетом всех скидок, купонов и доставки:</p>
+                            <p class="price">12 695<span class="currency">грн</span></p>
+                        </div>
+                        <div class="make-order">
+                            <a id="make-order" href="success.html">Подтвердить заказ</a>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="checkout-cart">
+                    <p class="checkout-cart-title">Ваш заказ:</p>
+                    <div id="order-list" class="order-list scrollTable scrollbar-inner">
+                        <div class="order-product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="img/prod-img1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <a href="#">Чехол Apple Silicone Case Sea Blue для iPhone 6s</a>
+                                <span>Количество: <span class="quantity">1</span></span>
+                            </div>
+                            <div class="product-price">
+                                <span>11 999 грн</span>
+                            </div>
+                        </div>
+                        <div class="order-product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="img/prod-img2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <a href="#">Apple iPhone 6s 128GB Rose Gold</a>
+                                <span>Количество: <span class="quantity">1</span></span>
+                            </div>
+                            <div class="product-price">
+                                <span>0 грн</span>
+                            </div>
+                        </div>
+                        <div class="order-product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="img/prod-img3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <a href="#">Гарнитура Huawei 6s 128B Grey Original</a>
+                                <span>Количество: <span class="quantity">1</span></span>
+                            </div>
+                            <div class="product-price">
+                                <span>696 грн</span>
+                            </div>
+                        </div>
+                        <div class="order-product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="img/prod-img1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <a href="#">Чехол Apple Silicone Case Sea Blue для iPhone 6s</a>
+                                <span>Количество: <span class="quantity">1</span></span>
+                            </div>
+                            <div class="product-price">
+                                <span>11 999 грн</span>
+                            </div>
+                        </div>
+                        <div class="order-product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="img/prod-img2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <a href="#">Apple iPhone 6s 128GB Rose Gold</a>
+                                <span>Количество: <span class="quantity">1</span></span>
+                            </div>
+                            <div class="product-price">
+                                <span>0 грн</span>
+                            </div>
+                        </div>
+                        <div class="order-product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="img/prod-img3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-name">
+                                <a href="#">Гарнитура Huawei 6s 128B Grey Original</a>
+                                <span>Количество: <span class="quantity">1</span></span>
+                            </div>
+                            <div class="product-price">
+                                <span>696 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                        <ul class="cart-total-list">
+                            <li class="cost">
+                                <span class="text">Стоимость заказа:</span>
+                                <span class="price">15 567 грн</span>
+                            </li>
+                            <li class="discount">
+                                <span class="text">Скидка участника клуба SmartLIGA:</span>
+                                <span class="price">2 872 грн</span>
+                            </li>
+                            <li class="delivery">
+                                <span class="text">Доставка:</span>
+                                <span class="price">0<span class="currency">грн</span></span>
+                            </li>
+                            <li class="to-pay">
+                                <span class="text">К оплате:</span>
+                                <span class="price">12 695<span class="currency">грн</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="edit-order">
+                        <a id="edit-order" href="bucket.html">Редактировать заказ в корзине</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="forClient width1000">
+    <h2>Для членов клуба доступно</h2>
+    <ul class="clearfix">
+        <li>
+            <img src="img/Sale_x1.png" alt="img">
+            <h2>Особенные цены</h2>
+            <span style="max-width: 188px;margin: 0 auto;">Огромные скидки, которые действуют только для членов шопинг-клуба SmartLIGA</span>
+        </li>
+        <li>
+            <img src="img/Lock_x1.png" alt="img">
+            <h2>Резервация</h2>
+            <span style="max-width: 136px;margin: 0 auto;">Только члены клуба могут резервировать товар</span>
+        </li>
+        <li>
+            <img src="img/Light_x1.png" alt="img">
+            <h2>Уведомление</h2>
+            <span style="max-width: 171px;margin: 0 auto;">Все члены клуба первыми получают уведомление о новых распродажах</span>
+        </li>
+        <li>
+            <img src="img/Draco_x1.png" alt="img">
+            <h2>Заказ товара</h2>
+            <span style="max-width: 188px;margin: 0 auto;">Члены клуба SmartLIGA могут заказывать товар, который они хотят купить по скидке</span>
+        </li>
+        <li>
+            <img src="img/Uni_x1.png" alt="img">
+            <h2>Ночное безумие</h2>
+            <span>Только члены клуба могут участвовать в ночных распродажах</span>
+        </li>
+    </ul>
+
+    <div class="enterClub">
+        <h2>Хочешь стать членом клуба SmartLIGA?</h2>
+        <form>
+            <input type="text" placeholder="Укажи свой E-mail, чтобы стать членом закрытого шопинг-клуба">
+            <input type="submit" value="ВСТУПИТЬ В КЛУБ">
+        </form>
+        <div class="sended clearfix">
+            <img src="img/email_x1.png" alt="img">
+            <div>
+                <span>Готово</span>
+                <h3>СЮРПРИЗ УЖЕ НА ВАШЕЙ ПОЧТЕ!</h3>
+                <p>Теперь вы сможете покупать электронику в нашем клубе по особенным ценам! <br> Не забудьте <b>проверить
+                    почту!</b>
+                    Вас ждет очень приятный сюрприз.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<a class="scrollTop"></a>
+<div class="bottom  clearfix">
+    <div class="width1000">
+        <ul class="fleft">
+            <li>
+                <span>1</span>
+                <a class="lookedTov">Просмотренные</a>
+            </li>
+            <li><span class="compareCounter">1</span><a href="compare.html" class="compareBottom">Сравнение товаров</a>
+            </li>
+            <li><span class="setAsideCounter">7</span><a href="setAside24.html" class="bookedBottom">Вы
+                забронировали</a></li>
+        </ul>
+        <div class="fright bottBuck">
+            <a href="bucket.html" class="bucketBottom">Корзина</a>
+            <span>7</span>
+            <a class="bottTakeOrder bucketBottom" href="bucket.html">Оформить заказ</a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="width1000">
+        <div class="foterMenu clearfix">
+            <div class="ulBotMenu fleft" style="width: 230px; margin-right: 28px;">
+                <h2>Шопинг-Клуб</h2>
+                <ul class="clearfix">
+                    <li><a href="#" class="HowItWorks">Как это работает?</a></li>
+                    <li><a href="#" class="About">О Шопинг-Клубе</a></li>
+                    <li><a href="#" class="Shipping">Доставка и Оплата</a></li>
+                    <li><a href="#" class="Returns">Возврат и Обмен покупок</a></li>
+                    <li><a href="#" class="AreYouSupplierBottom">Вы поставщик?</a></li>
+                    <li><a href="contact.html" class="Contacts">Контакты</a></li>
+                    <li><a href="#" class="TermsOfUse">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+            <div class="ulBotMenu fleft" style="width: 194px; margin-right: 47px;">
+                <h2>Для членов Клуба</h2>
+                <ul class="clearfix">
+                    <li><a href="EnterRegistration.html" class="LogInBottom">Вход в личный кабинет</a></li>
+                    <li><a href="EnterRegistration.html" class="RegistrationBottom">Регистрация</a></li>
+                    <li><a href="paswordRecovery.html" class="LostPassBottom">Забыли пароль?</a></li>
+                    <li><a class="refMoneyActive RefundsBottom">Возврат денег с покупок</a></li>
+                </ul>
+            </div>
+            <div class="ulBotMenu fleft" style="width: 230px; margin-right: 11px">
+                <h2>Для ваших Друзей</h2>
+                <ul class="clearfix">
+                    <li><a href="pageBonus.html" class="invite200UAHBottom">Пригласить друзей в Клуб</a></li>
+                    <li><a class="TellYourFriends TellFriendsBottom">Рассказать о Клубе друзьям</a></li>
+                    <li><a href="pageBonus.html" class="GiveFriendCardBottom">Подарить другу членскую карту</a></li>
+                </ul>
+                <a href="https://vidgets.pro" class="fleft"
+                   style="margin-top: 8px; width: 68px; height: 11px; display: block; margin-bottom: 4px;"><img
+                        src="img/vgts.png" alt="img" style="display:block;"></a>
+                <div class="vgtsText fleft">
+                    <a href="https://vidgets.pro">Разработка мобильных приложений</a> и web-сервисов для стартапов и бизнеса
+                </div>
+
+            </div>
+
+            <div class="footerCallback fleft">
+                <div class="footerNum">
+                    <a href="tel:0981057239">
+                        <!--<img src="img/footer_phone_x1.png" alt="img">-->
+                        098 105 72 39
+                    </a>
+                    <span>
+                        или hello@smartliga.club для ваших писем и обращений!
+                    </span>
+                </div>
+                <div class="workTime">
+                    <h3>График работы call-центра шопинг-клуба:</h3>
+                    <span>
+                        Круглосуточно 24/7
+                    </span>
+                </div>
+                <div class="paySystem clearfix">
+                    <span class="fleft">
+                        Принимаем оплату:
+                    </span>
+                    <img src="img/VISA&MasterCard_x1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footerInfo clearfix">
+            <span class="fleft">
+                2017 Купить смартфон или телефон теперь просто и выгодно, если покупать в шопинг-клубе SmartLIGA!
+                радуйте себя и близких!
+            </span>
+
+            <ul class="socialLink clearfix">
+
+                <li>
+                    <a class="shareButt fbBottom"
+                       onclick="window.open('http://www.facebook.com/share.php?u=https://smartliga.club/pageBonus.html','_blank', 'scrollbars=0, resizable=1, menubar=0, left=300, top=200, width=550, height=440, toolbar=0, status=0');return false">
+                        <img src="img/Footer_Fb_x1.png" alt="img">
+                    </a>
+                </li>
+
+                <li>
+                    <a class="shareButt twBottom"
+                       onclick="window.open('https://twitter.com/home?status=Вступай в клуб по моей ссылке https://smartliga.club/pageBonus.html','_blank', 'scrollbars=0, resizable=1, menubar=0, left=300, top=200, width=550, height=440, toolbar=0, status=0');return false">
+                        <img src="img/Footer_Tw_x1.png" alt="img">
+                    </a>
+                </li>
+
+                <li><a class="shareButt vkBottom"
+                       onclick="window.open('http://vk.com/share.php?url=https://smartliga.club/pageBonus.html','_blank', 'scrollbars=0, resizable=1, menubar=0, left=300, top=200, width=550, height=440, toolbar=0, status=0');return false">
+                    <img src="img/Footer_Vk_x1.png" alt="img"></a></li>
+
+                <li><a href="#"><img src="img/Footer_Smart_x1.png" alt="img"></a></li>
+
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<div id="overlay">
+
+</div>
+<div class="looked">
+    <div class="backCont">
+        <img src="img/simple_logo_SmartLIGA_x1.png" alt="liga">
+        <div class="close fright">
+            <i class="fa fa-times" aria-hidden="true"></i>
+
+        </div>
+    </div>
+    <div id="tovContainer2" class="scrollbar-inner">
+        <ul>
+            <li>
+                <div class="tov">
+                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                </div>
+                <div class="descr">
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    <span>Количество: 1</span>
+                </div>
+                <div class="price">
+                    7 898 грн
+                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                </div>
+
+            </li>
+            <li>
+                <div class="tov">
+                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                </div>
+                <div class="descr">
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    <span>Количество: 1</span>
+                </div>
+                <div class="price">
+                    7 898 грн
+                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                </div>
+
+            </li>
+            <li>
+                <div class="tov">
+                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                </div>
+                <div class="descr">
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    <span>Количество: 1</span>
+                </div>
+                <div class="price">
+                    7 898 грн
+                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                </div>
+
+            </li>
+            <li>
+                <div class="tov">
+                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                </div>
+                <div class="descr">
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    <span>Количество: 1</span>
+                </div>
+                <div class="price">
+                    7 898 грн
+                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                </div>
+
+            </li>
+            <li>
+                <div class="tov">
+                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                </div>
+                <div class="descr">
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    <span>Количество: 1</span>
+                </div>
+                <div class="price">
+                    7 898 грн
+                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                </div>
+
+            </li>
+            <li>
+                <div class="tov">
+                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                </div>
+                <div class="descr">
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    <span>Количество: 1</span>
+                </div>
+                <div class="price">
+                    7 898 грн
+                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                </div>
+
+            </li>
+            <li>
+                <div class="tov">
+                    <a href="product.html"><img src="img/SamsungS5.png" alt="img"></a>
+                </div>
+                <div class="descr">
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    <span>Количество: 1</span>
+                </div>
+                <div class="price">
+                    7 898 грн
+                    <span>
+                    Скидка: 2 107 грн
+                </span>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="otherCity">
+    <h2>Укажите Ваш город:</h2>
+    <ul class="country clearfix">
+        <li><img src="img/Ukraine.svg_x1.png" alt="Ukraine">Украина</li>
+        <li><img src="img/Russian_x1.png" alt="Russia">Россия</li>
+        <li><img src="img/Belarus_x1.png" alt="Belarassia">Беларусь</li>
+        <li><img src="img/Kazakhstan_x1.png" alt="Kazakhstan">Казахстан</li>
+    </ul>
+    <div class="chiseTown clearfix">
+        <h3>
+            Ваш город:
+        </h3>
+        <form action="">
+
+            <input type="text" placeholder="В каком городе Вы находитесь?">
+            <input type="submit" value="ВЫБРАТЬ">
+        </form>
+    </div>
+    <ul class="town clearfix">
+        <li><a href="#">Киев</a></li>
+        <li><a href="#">Запорожье </a></li>
+        <li><a href="#">Николаев</a></li>
+        <li><a href="#">Херсон</a></li>
+        <li><a href="#">Винница</a></li>
+        <li><a href="#">Кривой Рог</a></li>
+        <li><a href="#">Одесса</a></li>
+        <li><a href="#">Хмельницкий</a></li>
+        <li><a href="#">Днепропетровск</a></li>
+        <li><a href="#">Луганск</a></li>
+        <li><a href="#">Полтава</a></li>
+        <li><a href="#">Черкасы</a></li>
+        <li><a href="#">Донецк</a></li>
+        <li><a href="#">Львов</a></li>
+        <li><a href="#">Сумы</a></li>
+        <li><a href="#">Чернигов</a></li>
+        <li><a href="#">Житомир</a></li>
+        <li><a href="#">Мариуполь</a></li>
+        <li><a href="#">Харьков</a></li>
+    </ul>
+</div>
+<div class="tellFriends">
+    <div>
+        <h2>
+            Расскажи о клубе друзьям
+        </h2>
+        <span>
+            и получи 200 грн себе и для каждого друга
+        </span>
+        <h3>
+            200 грн
+        </h3>
+        <p>
+            SmartLIGA.club - это лучшее место для покупки электроники
+        </p>
+        <ul class="share clearfix">
+            <li>
+                <a onclick="window.open('http://www.facebook.com/share.php?u=https://smartliga.club/pageBonus.html','_blank', 'scrollbars=0, resizable=1, menubar=0, left=300, top=200, width=550, height=440, toolbar=0, status=0');return false"
+                   class="facebook shareButt">Поделиться</a>
+            </li>
+            <li>
+                <a onclick="window.open('https://twitter.com/home?status=Вступай в клуб по моей ссылке https://smartliga.club/pageBonus.html','_blank', 'scrollbars=0, resizable=1, menubar=0, left=300, top=200, width=550, height=440, toolbar=0, status=0');return false"
+                   class="twiter shareButt">Поделиться</a>
+            </li>
+            <li>
+                <a onclick="window.open('http://vk.com/share.php?url=https://smartliga.club/pageBonus.html','_blank', 'scrollbars=0, resizable=1, menubar=0, left=300, top=200, width=550, height=440, toolbar=0, status=0');return false"
+                   class="vk shareButt">Поделиться</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="searchResalt">
+    <div class="resaltCont scrollbar-inner">
+        <table>
+            <tr>
+                <td>
+                    <a href="product.html">
+                        <img src="img/Group193.png" alt="img">
+                    </a>
+                </td>
+                <td>
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    Цена для членов клуба:
+                    <span>11 999 грн</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="product.html">
+                        <img src="img/Group193.png" alt="img">
+                    </a>
+                </td>
+                <td>
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    Цена для членов клуба:
+                    <span>11 999 грн</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="product.html">
+                        <img src="img/Group193.png" alt="img">
+                    </a>
+                </td>
+                <td>
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    Цена для членов клуба:
+                    <span>11 999 грн</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="product.html">
+                        <img src="img/Group193.png" alt="img">
+                    </a>
+                </td>
+                <td>
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    Цена для членов клуба:
+                    <span>11 999 грн</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="product.html">
+                        <img src="img/Group193.png" alt="img">
+                    </a>
+                </td>
+                <td>
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    Цена для членов клуба:
+                    <span>11 999 грн</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="product.html">
+                        <img src="img/Group193.png" alt="img">
+                    </a>
+                </td>
+                <td>
+                    <a href="product.html">Samsung Galaxy S5 SM-G900F</a>
+                    Цена для членов клуба:
+                    <span>11 999 грн</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <a href="#" class="AllSearch">ПОКАЗАТЬ ВСЕ</a>
+</div>
+<div class="callBackForm">
+    <h2>Вам перезвонить?</h2>
+    <span>Укажите свое имя и номер телефона мы перезвоним в течение 4 минут</span>
+    <form action="">
+        <label>Ваше имя: <br>
+            <input type="text" name="name">
+        </label>
+        <label>Номер телефона: <br>
+            <input type="text" name="phone">
+        </label>
+        <input type="submit" value="ПЕРЕЗВОНИТЕ МНЕ">
+    </form>
+</div>
+
+<div class="refundMoney">
+    <a href="index.html">
+        <img src="img/logo_for_popups_x1.png" alt="img">
+    </a>
+    <h3>
+        <b>ВОЗВРАТ ДЕНЕГ</b> <br>
+        с каждой покупки SmartLIGA
+    </h3>
+    <div class="closeWindow">
+        <img src="img/close_x1.png" alt="close">
+    </div>
+    <p>
+        SmartLIGA возвращает деньги с каждой покупки! Все просто - вступите в клуб, делайте покупки. За это Вы будете
+        получать возврат с каждого товара.
+    </p>
+    <div class="refundForms">
+        <div class="eClab activeForm forms">
+            <div><span></span></div>
+            <h4>Я хочу вступить в клуб:</h4>
+            <form class="refundMoneyRegistrationForm">
+                <label>
+                    Ваш E-mail:
+                    <input type="email">
+                </label>
+                <label>
+                    Пароль:
+                    <input type="password">
+                </label>
+                <label>
+                    Пароль (еще раз):
+                    <input type="password">
+                </label>
+
+                <input type="submit" value="ВСТУПИТЬ В КЛУБ">
+            </form>
+        </div>
+
+
+        <div class="lClab forms">
+            <div><span></span></div>
+            <h4>Я уже член клуба:</h4>
+            <form class="refundMoneyLogInForm">
+                <p>
+                    Укажите ваш e-mail и пароль, чтобы войти в свой аккаунт и продолжить накапливать средства. <a
+                        href="paswordRecovery.html">Забыли пароль?</a>
+                </p>
+                <label>
+                    Ваш E-mail:
+                    <input type="email">
+                </label>
+                <label>
+                    Пароль:
+                    <input type="password">
+                </label>
+
+                <input type="submit" value="ВОЙТИ">
+            </form>
+        </div>
+
+    </div>
+    <h3>
+        ИЛИ
+    </h3>
+    <div>
+        <a class="logAsFacebook refundMoneyLogAsFacebook"><img src="img/facebook_x1.png" alt="img"></a>
+        <a class="logAsVK refundMoneyLogAsVk"><img src="img/vk_x1.png" alt="img"></a>
+    </div>
+    <span>
+        SmartLIGA.club - это лучшее место для покупки электроники и цифровой техники. Вступая в клуб SmartLIGA
+        вы соглашаетесь с Правилами использования сайта и <a href="#">Пользовательским соглашением</a>
+    </span>
+    <div><img src="img/platforms_x1.png" alt="img"></div>
+    <div>
+        <span>
+            Адрес: 03057 Украина, г. Киев, ул. Полевая, 21 | Call-центр 098 105 7239 | SmartLIGA.club
+        </span>
+    </div>
+</div>
+<div class="howEnterSmartLIGA">
+    <h3>Как вступить в клуб SmartLIGA?</h3>
+    <h4>чтобы присоединиться к клубу и покупать товары с огромными скидками укажите свой E-mail</h4>
+    <div class="closeWindow">
+        <img src="img/close_x1.png" alt="close">
+    </div>
+    <div class="befForm">
+        <label for="enterSmartLIGA">
+            Укажите Ваш E-mail:
+        </label>
+        <img src="img/logo_for_popups_x1.png" alt="img">
+    </div>
+
+    <form class="HowEnterSmartLIGAPopUpForm">
+        <input id="enterSmartLIGA" type="text"
+               placeholder="Укажи свой E-mail, чтобы стать членом закрытого шопинг-клуба">
+        <input type="submit" value="ВСТУПИТЬ В КЛУБ">
+    </form>
+    <h3>
+        Для членов клуба доступно:
+    </h3>
+    <ul class="clearfix">
+        <li>
+            <img src="img/Sale_x1.png" alt="img">
+            <h2>Особенные цены</h2>
+            <span style="max-width: 188px;margin: 0 auto;">Огромные скидки, которые действуют только для членов шопинг-клуба SmartLIGA</span>
+        </li>
+        <li>
+            <img src="img/Lock_x1.png" alt="img">
+            <h2>Резервация</h2>
+            <span style="max-width: 136px;margin: 0 auto;">Только члены клуба могут резервировать товар</span>
+        </li>
+        <li>
+            <img src="img/Light_x1.png" alt="img">
+            <h2>Уведомление</h2>
+            <span style="max-width: 171px;margin: 0 auto;">Все члены клуба первыми получают уведомление о новых распродажах</span>
+        </li>
+        <li>
+            <img src="img/Draco_x1.png" alt="img">
+            <h2>Заказ товара</h2>
+            <span style="max-width: 188px;margin: 0 auto;">Члены клуба SmartLIGA могут заказывать товар, который они хотят купить по скидке</span>
+        </li>
+        <li>
+            <img src="img/Uni_x1.png" alt="img">
+            <h2>Ночное безумие</h2>
+            <span>Только члены клуба могут участвовать в ночных распродажах</span>
+        </li>
+    </ul>
+    <p>
+        SmartLIGA.club - это лучшее место для покупки электроники и цифровой техники. Каждый член нашего шопинг-клуба
+        первым получает уведомления на e-mail о начале краткосрочных акций и ночного безумия
+    </p>
+    <div>
+        <img src="img/platforms_x1.png" alt="img">
+    </div>
+    <div class="botPop">
+        <span>
+            Адрес: 03057 Украина, г. Киев, ул. Полевая, 21 | Call-центр 098 105 7239 | SmartLIGA.club
+        </span>
+    </div>
+</div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/prettify.js" type="text/javascript"></script>
+<script src="js/jquery.scrollbar.js" type="text/javascript"></script>
+<script src="js/nprogress.js" type="text/javascript"></script>
+<script src="js/js.js" type="text/javascript"></script>
+</body>
+</html>
